@@ -4,15 +4,18 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-
-    // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     container: {
+      center: true,
       padding: {
         DEFAULT: "15px",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
       },
+      
     },
     screens: {
       sm: "640px",
@@ -41,11 +44,6 @@ module.exports = {
         montserrat: ["var(--font-montserrat)", "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
       },
-    },
-  },
-  container: {
-    padding: {
-      DEFAULT: "15px",
     },
   },
   plugins: [require("tailwind-scrollbar")],

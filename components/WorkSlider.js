@@ -43,23 +43,23 @@ import Image from "next/image";
 const WorkSlider = () => {
   return (
     <Swiper
-      spaceBetween={30}
-      slidesPerView={1} // Default slides per view for mobile
+      spaceBetween={20}
+      slidesPerView={1}
       breakpoints={{
         640: { slidesPerView: 1 }, // Small screens (1 slide)
         768: { slidesPerView: 2 }, // Medium screens (2 slides)
-        1024: { slidesPerView: 3 }, // Large screens (3 slides)
+        1024: { slidesPerView: 3 }, // Large screens (2.5 slides)
       }}
       navigation={true}
       pagination={{ clickable: true }}
       modules={[Pagination, Navigation]}
-      className="h-[400px]" // Consistent height for slider
+      className="h-[300px] md:h-[400px]" // Consistent height for slider
     >
       {projects.map((project, index) => (
         <SwiperSlide key={index}>
           <div
             className="relative rounded-lg overflow-hidden flex items-center justify-center group"
-            style={{ height: "400px" }}
+            style={{ height: "100%" }}
           >
             {/* Image */}
             <Image
@@ -80,14 +80,16 @@ const WorkSlider = () => {
                 opacity-0 group-hover:opacity-100 transition-all duration-300"
             >
               {/* Project Title */}
-              <h3 className="text-white text-xl font-bold">{project.title}</h3>
+              <h3 className="text-white text-lg md:text-xl font-bold">
+                {project.title}
+              </h3>
               {/* Links */}
               {project.liveLink && (
                 <a
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-lg font-semibold delay-100"
+                  className="text-white text-base md:text-lg font-semibold delay-100"
                 >
                   {project.liveText}
                 </a>
@@ -96,11 +98,11 @@ const WorkSlider = () => {
                 href={project.projectLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white text-lg font-semibold delay-150"
+                className="text-white text-base md:text-lg font-semibold delay-150"
               >
                 {project.projectText}
               </a>
-              <BsArrowRight className="text-2xl delay-200 text-white" />
+              <BsArrowRight className="text-xl md:text-2xl delay-200 text-white" />
             </div>
           </div>
         </SwiperSlide>

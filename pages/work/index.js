@@ -9,18 +9,18 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-20 md:py-36 flex items-center relative">
+    <div className="h-screen bg-primary/30 py-10 lg:py-20 xl:py-36 flex items-center relative overflow-hidden">
       <Circles />
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col xl:flex-row gap-x-8">
+      <div className="container mx-auto px-6 md:px-10 lg:px-16">
+        <div className="flex flex-col xl:flex-row gap-x-8 items-center">
           {/* Text Section */}
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-12 xl:mb-0 space-y-4">
+          <div className="flex flex-col justify-center xl:w-[40%] lg:text-left text-center space-y-6 p-6 rounded-lg">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 text-3xl md:text-4xl xl:text-5xl font-bold"
+              className="h2 text-2xl md:text-3xl xl:text-4xl font-bold p-2 rounded-md ml-3"
             >
               My Projects
             </motion.h2>
@@ -29,7 +29,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-6 max-w-[400px] mx-auto lg:mx-0 text-sm md:text-base xl:text-lg"
+              className="text-sm md:text-base xl:text-lg leading-relaxed p-4 rounded-md mb-6 md:mb-8"
             >
               During my free time, I&apos;ve tried to build some personal
               projects. Some of my completed projects include: Player-Pulse,
@@ -44,7 +44,7 @@ const Work = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[65%] relative"
+            className="w-full xl:max-w-[55%] relative"
           >
             <WorkSlider />
           </motion.div>
@@ -54,4 +54,6 @@ const Work = () => {
     </div>
   );
 };
+
 export default Work;
+
