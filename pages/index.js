@@ -27,7 +27,7 @@ const Home = () => {
             exit="hidden"
             className="text-4xl md:text-5xl font-bold leading-tight text-center md:text-left my-8"
           >
-            Hi, I'm Jeevan Dsouza
+            Hi, I&apos;m Jeevan Dsouza
             <br />
             <span className="text-accent leading-loose text-4xl">
               Dotnet Developer
@@ -69,9 +69,7 @@ const Home = () => {
       </div>
 
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-explosion bg-cover bg-center bg-no-repeat mix-blend-color-dodge z-0"
-      ></div>
+      <div className="absolute inset-0 bg-explosion bg-cover bg-center bg-no-repeat mix-blend-color-dodge z-0"></div>
 
       {/* Particles */}
       <ParticleContainer />
