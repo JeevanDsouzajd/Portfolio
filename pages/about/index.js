@@ -88,7 +88,6 @@ const aboutData = [
 ];
 
 // Components
-import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 
 // Framer Motion
