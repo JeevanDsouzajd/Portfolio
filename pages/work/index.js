@@ -20,7 +20,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 text-2xl md:text-3xl xl:text-4xl font-bold p-2 rounded-md ml-3"
+              className="h2 text-2xl md:text-3xl xl:text-4xl font-bold p-2 rounded-md ml-3 sm:mt-2"
             >
               My Projects
             </motion.h2>
@@ -29,7 +29,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-sm md:text-base xl:text-lg leading-relaxed p-4 rounded-md mb-6 md:mb-8"
+              className="text-sm md:text-base xl:text-lg leading-relaxed p-4 rounded-md mb-6 md:mb-8 sm:-mt-12"
             >
               During my free time, I&apos;ve tried to build some personal
               projects. Some of my completed projects include: Player-Pulse,

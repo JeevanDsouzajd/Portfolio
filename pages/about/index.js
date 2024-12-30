@@ -105,7 +105,7 @@ const About = () => {
       <Circles />
       <div className="container mx-auto min-h-screen flex flex-col items-center xl:flex-row gap-x-6">
         {/* Text Section */}
-        <div className="flex-1 flex flex-col justify-center px-4 xl:px-0  -mt-20">
+        <div className="flex-1 flex flex-col justify-center px-4 xl:px-0 xl:-mt-20">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
